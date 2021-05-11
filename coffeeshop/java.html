@@ -1,0 +1,28 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+	<p id="output" >java script!</p>
+	<input   id="city" >
+	<button onclick="changetext()">Submit</button>
+	<script type="text/javascript">
+		function changetext()
+		{
+          var city=document.getElementById("city").value;
+          httprequest = new XMLHttpRequest();
+          var url="https://api.weatherbit.io/v2.0/current?city="+city+"&key=836a1132f03f432fb8256e8dfa08c0b4";
+          httprequest.open("GET",url);
+          httprequest.send();
+           httprequest.onreadystatechange=function(){
+           	if(this.readyState==4 && this.status==200)
+           		var user_data=JSON.parse(this.responseText);
+           	 document.getElementById("output").innerHTML=user_data.data[0].temp;
+           }
+
+        }
+	</script>
+
+</body>
+</html>
