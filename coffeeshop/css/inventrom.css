@@ -76,7 +76,7 @@ span
 
 { 
 	display:inline-block;
-	padding-left:22%;
+	padding-right:22%;
 	width:35%;
 }
 .description2
@@ -107,7 +107,7 @@ span
 #awards-section
 {
   
-  margin-top:5%;
+  margin-top:12%;
   width:100%;
   background-color: #FFFFFF;
 }
