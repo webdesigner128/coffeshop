@@ -41,6 +41,10 @@ span
     color:#0a0a0a;
 	padding:10px;
 }
+.links a:hover
+{
+	color:blue;
+}
 .main
 {
 	margin-top:22%;
